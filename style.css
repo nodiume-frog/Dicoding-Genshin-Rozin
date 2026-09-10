@@ -150,7 +150,8 @@ header {
 .card-main-left-title h1 {
     font-size: 64px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: -25px;
 }
 
 .card-main-left-title h4 {
@@ -167,4 +168,29 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer img{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 8px;
+    font-size: 32px;
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: red;
 }
