@@ -6,6 +6,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Signika", sans-serif;
+    background-image: url('asset/Columbina2.png');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 header {
@@ -34,7 +40,7 @@ header {
 .navbar a {
     text-decoration: none;
     font-family: "Signika", sans-serif;
-    color: rgb(26, 26, 26);
+    color: #FEFEFE;
     font-size: 18px;
     font-weight: 500;
     margin-right: 40px;
@@ -45,7 +51,7 @@ header {
 .navbar a:hover {
     text-decoration: underline;
     font-family: "Signika", sans-serif;
-    color: rgb(26, 26, 26);
+    color: #FEFEFE;
     font-size: 24px;
     font-weight: 500;
     margin-right: 40px;
@@ -61,6 +67,7 @@ header {
 
 .logo img {
     margin: 0 20px;
+    border-radius: 50%;
 }
 
 .sign-in-navbar {
@@ -73,13 +80,23 @@ header {
     grid-column: 3;
 }
 
-.sign-in-navbar button {
+.sign-in-navbar button:first-child {
     border-style: none;
-    border: 1px solid black;
-    background-color: transparent;
+    border: 1px solid #FEFEFE;
+    background-color: #FEFEFE;
     border-radius: 40px;
     height: 40px;
     width: 80px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-in-navbar button:last-child {
+    border-style: none;
+    background-color: #BC98CF;
+    border-radius: 40px;
+    height: 40px;
+    width: 80px;
+    transition: all 0.3s ease-in-out;
 }
 
 .sign-in-navbar a {
@@ -88,20 +105,33 @@ header {
     font-size: 18px;
     font-weight: 500;
     font-family: "Signika", sans-serif;
+    transition: all 0.3s ease-in-out;
 }
+
+.sign-in-navbar button:last-child a {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Signika", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .card {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .card-left {
     padding: 40px;
     height: 400px;
     width: 600px;
-    background-color: antiquewhite;
+    background-color: #F4F3F1;
     border-radius: 40px 0 0 40px;
+    box-shadow: 10px 10px 20px rgb(26, 26, 26);
 }
 
 .card-right {
@@ -109,5 +139,32 @@ header {
     height: 400px;
     width: 200px;
     border-radius: 0 40px 40px 0;
-    background-color: black;
+    background-image: url(asset/Columbina5.png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 20px rgb(26, 26, 26);
+}
+
+.card-main-left-title h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-main-left-title h4 {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card-main-left-img  img {
+    margin: 20px 20px 20px;
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
