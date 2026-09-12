@@ -147,6 +147,10 @@ header {
     box-shadow: 10px 10px 20px rgb(26, 26, 26);
 }
 
+.card-right img {
+    width: 0px;
+}
+
 .card-main-left-title h1 {
     font-size: 64px;
     font-weight: bold;
